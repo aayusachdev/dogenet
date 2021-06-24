@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+*,*::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Montserrat', sans-serif;
+  background-color: #212130;
+  background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('./assets/images/bg.png');
+  color: #f2f2f2;
+  min-width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  /* top right bottom left */
+  margin: 80px auto 0 auto;
+  max-width: 1200px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-container{
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+  text-decoration: none;
+  color: #16CFF7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar{
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.9);
+}
+
+.MuiTextField-root > label {
+  color: rgba(255,255,255, 0.8);
+}
+
+.navbar svg{
+  margin: 0px 22px;
+}
+
+.MuiSvgIcon-fontSizeSmall{
+  font-size: 1.1rem !important;
+}
+
+.getStartedBtn{
+  background-color: #FFDD77;
+  border: 2px solid #FFDD77;
+  padding: 1rem 3rem;
+	border-radius: 2.75rem;
+  cursor: pointer;
+	font-size: 1rem;
+	font-weight: 600;
+  margin-top: 38px;
+  box-shadow: 0 1rem 1.25rem 0 rgb(255 235 0 / 50%) inset,
+  0 -0.25rem 1.5rem rgb(255 235 0) inset,
+}
+
+.getStartedBtn:hover{
+  background-color: transparent;
+  color: #FFDD77;
+  transition: background-color .4s ease-in;
 }
